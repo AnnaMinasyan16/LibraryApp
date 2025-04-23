@@ -1,0 +1,71 @@
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fefaf1; /* soft beige */
+  margin: 0;
+  padding: 0;
+}
+
+
+.cyrcle {
+  width: 20px;
+  height: 20px;
+  border-right: 1px solid black;
+  padding: 20px;
+  border-radius: 50%;
+  display: block;
+  animation: spin 1s linear infinite;
+}
+
+.cyrcle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pagination{
+  margin-bottom: 50px;
+}
+
+.theme-toggle {
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --card-bg: #f3f3f3;
+  --button-bg: #ff4d4f;
+}
+
+.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #e2e2e2;
+  --card-bg: #2c2c2c;
+  --button-bg: #d9363e;
+}
+
+.app {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
